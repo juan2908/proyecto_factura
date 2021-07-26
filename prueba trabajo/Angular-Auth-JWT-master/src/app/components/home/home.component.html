@@ -1,0 +1,36 @@
+<form [formGroup]="form" (ngSubmit)="save($event)"></form>> 
+    <p>
+      Name: <br/>
+      <input type="text" formControlName="name">
+    </p>
+    <p>
+      apellidos: <br/>
+      <input type="text" formControlName="apellidos">
+    </p>
+    <p>
+      Email: <br/>
+      <input type="string" formControlName="email">
+    </p>
+    <p>
+        telefono: <br/>
+        <input type="string" formControlName="telefono">
+      </p>
+    <p>
+        
+        Tipo de documento: <br/>
+      <select formControlName="Tipo de documento">
+        <option value="1">C.C.</option>
+        <option value="2">C.E.</option>
+      </select>
+    </p>
+    <p>
+        Numero de identificacion: <br/>
+        <input type="string" formControlName="Numero de identificacion">
+      </p>
+  </form>
+  <p>
+    password: <br/>
+    <input type="string" formControlName="password">
+  </p>
+  <button class="btn btn-primary" (ngSubmit)="save($event)">guardar</button>
+  <button class="btn btn-primary" (click)="logIn()">cancelar</button>
